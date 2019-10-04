@@ -1,0 +1,201 @@
+
+
+    <link rel="stylesheet" type="text/css" href="/css/lightbox.min.css">
+    <script src="/js/lightbox-plus-jquery.min.js"></script>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+  <div class="collapse navbar-collapse" id="navbarColor02">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link fnt-22" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <%if (user.isSubscribed) { %>
+      <li class="nav-item">
+        <a class="nav-link fnt-22" href="#">My Editions</a>
+      </li>
+      <% } %>
+
+      <%if (!user.isSubscribed) { %>
+      <li class="nav-item">
+        <a class="nav-link fnt-22" href="#">Free copy</a>
+      </li>
+      <% } %>
+
+      <li class="nav-item">
+        <a class="nav-link fnt-22" href="#">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link fnt-22" href="#">About</a>
+      </li>
+    </ul>
+
+    <ul class="navbar-nav my-4 my-lg-0">
+      <li class="nav-item dropdown show">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+          aria-expanded="true">
+          <p class="lead mb-3">Welcome
+            <%= user.name %>
+          </p>
+        </a>
+        <div class="dropdown-menu show" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 44px, 0px);">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a href="/users/logout" class="btn btn-secondary">Logout</a>
+        </div>
+      </li>
+    </ul>
+
+  </div>
+</nav>
+
+
+<h1 class="mt-4">Dashboard</h1>
+<p class="lead mb-3">Welcome
+  <%= user.name %>
+</p>
+
+
+<div class="container mt-4"></div>
+
+<div class="card text-white bg-secondary mb-3">
+
+
+  <div class="card-header">Header</div>
+  <div class="card-body">
+    <div class="row">
+      <div class="col-md-4">
+        <img class="coverpage" src="/1cover.jpg ">
+      </div>
+      <div class="col-md-4">
+        <div class="index" id="index">
+          <a class="alert-link fnt-18" href="/edition1/1.jpg" data-lightbox="edition1">
+            <p>Beautiful Name of Allah: Al Khaaliq-The Creator</p>
+          </a>
+          <a class="alert-link fnt-18" href="/edition1/2.jpg" data-lightbox="edition1">
+            
+            <p>Explanation of Ayah</p>
+          </a>
+          <a class="alert-link fnt-18" href="/edition1/3.jpg" data-lightbox="edition1">
+            
+            <p>Environmental Problems & its Islamic Solution </p>
+          </a>
+          <a class="alert-link fnt-18" href="/edition1/4.jpg" data-lightbox="edition1">
+            
+            <p>Islam: Panacea ta Suicide </p>
+          </a>
+          <a class="alert-link fnt-18" href="/edition1/5.jpg" data-lightbox="edition1">
+            
+            <p>The Secret of Success </p>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div id="index">
+          <a class="alert-link fnt-18" href="/edition1/6.jpg" data-lightbox="edition1">
+            
+            <p>Broken Marriages & Disintegration of The Ummah </p>
+          </a>
+          <a class="alert-link fnt-18" href="/edition1/7.jpg" data-lightbox="edition1">
+            
+            <p>Aqeedah:Does God Exist? </p>
+          </a>
+          <a class="alert-link fnt-18" href="/edition1/8.jpg" data-lightbox="edition1">
+            
+            <p>Qur Scholar: Muhammad lbn Musa Al-Khwarizmi </p>
+          </a>
+          <a class="alert-link fnt-18" href="/edition1/9.jpg" data-lightbox="edition1">
+            
+            <p>Usul AI Fiqh </p>
+          </a>
+          <a class="alert-link fnt-18" href="/edition1/10.jpg" data-lightbox="edition1">
+            
+            <p>Understanding World:Political Invasion af Iran...</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+<div class="card text-white bg-light mb-3">
+
+
+  <div class="card-header">Header</div>
+  <div class="card-body">
+    <div class="row">
+      <div class="col-md-4">
+        <img class="coverpage" src="/2cover.jpg ">
+      </div>
+      <div class="col-md-4">
+        <div class="index" id="index">
+          <a class="alert-link fnt-18" href="#">
+            <p>Beautiful Name of Allah: Al Khaaliq-The Creator</p>
+          </a>
+          <a class="alert-link fnt-18" href="#">
+            <p>Explanation of Ayah</p>
+          </a>
+          <a class="alert-link fnt-18" href="#">
+            <p>Environmental Problems & its Islamic Solution </p>
+          </a>
+          <a class="alert-link fnt-18" href="#">
+            <p>Islam: Panacea ta Suicide </p>
+          </a>
+          <a class="alert-link fnt-18" href="#">
+            <p>The Secret of Success </p>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div id="index">
+          <a class="alert-link fnt-18" href="#">
+            <p>Broken Marriages & Disintegration of The Ummah </p>
+          </a>
+          <a class="alert-link fnt-18" href="#">
+            <p>Aqeedah:Does God Exist? </p>
+          </a>
+          <a class="alert-link fnt-18" href="#">
+            <p>Qur Scholar: Muhammad lbn Musa Al-Khwarizmi </p>
+          </a>
+          <a class="alert-link fnt-18" href="#">
+            <p>Usul AI Fiqh </p>
+          </a>
+          <a class="alert-link fnt-18" href="#">
+            <p>Understanding World:Political Invasion af Iran...</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<script>
+  $(document).ready(function () {
+    console.log("inside js 2");
+    $("#index a").click(function () {
+      <%if (user.isSubscribed) { %>
+        console.log("exist");
+        <% } %>
+
+        <%if (!user.isSubscribed) { %>
+        console.log("not exist");
+        <% } %>
+
+
+    });
+  });
+
+</script>
