@@ -15,6 +15,29 @@ router.get('/dashboard', ensureAuthenticated, (req, res) =>
   })
 );
 
+
+
+//subscription form
+
+router.get('/subscription', ensureAuthenticated, (req, res) =>
+    res.render('subscription', {
+    user: req.user
+    })
+);
+
+
+router.post('/subscription', (req, res) => {
+  //const {email} = req.body;
+  console.log(req.body);
+  res.render('subscription', {
+    user: req.user
+    })
+});
+
+
+
+
+
 //mail send
 
 /* var smtpTransport = nodemailer.createTransport({

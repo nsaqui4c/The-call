@@ -1,0 +1,122 @@
+<div class="row mt-5">
+    <div class="col-md-6 m-auto">
+        <div class="card card-body">
+            <h1 class="text-center mb-3"><i class="fa fa-cart-arrow-down"></i> Subscribe</h1>
+            <% include ./partials/messages %>
+            <form action="/subscription" method="POST">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder=<%=user.email %>
+                    readonly
+                    />
+                </div>
+
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="form-group">
+                            <label for="name">First Name</label>
+                            <input type="text" id="fname" name="fname" class="form-control" placeholder="First Name" />
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="name">Last Name</label>
+                            <input type="text" id="lname" name="lname" class="form-control" placeholder="Last Name" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="name">Age</label>
+                            <input type="text" id="umar" name="age" class="form-control" placeholder="Age" />
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="row">
+                    <div class="col-md-4">
+
+                        <div class="form-group">
+
+                            <label for="name">Gender</label>
+                            <select class="custom-select" name="gender">
+                                <option value="Male" name="Male">Male</option>
+                                <option value="Female" name="Female">Female</option>
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="form-group">
+
+                            <label for="name">Subscription Plan</label>
+                            <select class="custom-select" name="subscription">
+                                <option value="1h" name="1h">1 Month - 40 Rs. (Hardcopy)</option>
+                                <option value="3h" name="Female">3 Months - 120 Rs. (Hardcopy)</option>
+                                <option value="6h" name="Male">6 Months - 220 Rs. (Hardcopy)</option>
+                                <option value="12h" name="Female">12 Months - 399 (Hardcopy)</option>
+                                <option value="1s" name="Male">1 Month - 10 Rs. (Softcopy)</option>
+                                <option value="3s" name="Female">3 Months - 30 Rs. (Softcopy)</option>
+                                <option value="6s" name="Male">6 Months - 50 Rs. (Softcopy)</option>
+                                <option value="12s" name="Female">12 Months - 100 Rs. (Softcopy)</option>
+
+                            </select>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="form-group">
+                    <label for="Profession">Profession</label>
+                    <input type="text" id="profession" name="profession" class="form-control" placeholder="Profession" />
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="Adress">Address</label>
+                            <textarea class="form-control" id="adress" name="adress" rows="4"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="form-group">
+                                <label for="city">City</label>
+                                <input type="text" id="city" name="city" class="form-control" placeholder="City Name" />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group">
+                                <label for="state">State</label>
+                                <input type="text" id="state" name="state" class="form-control" placeholder="State" />
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="Mobile">Mobile <sup>(Sisters can provide their MAHRAM's phone no. or just write
+                            0123456789)</sup></label>
+                    <input type="text" id="mobile" name="mobile" class="form-control" placeholder="0123456789" />
+                </div>
+
+
+
+                <button type="submit" class="btn btn-primary btn-block">Subscribe</button>
+            </form>
+            
+
+           </div>
+    </div>
+</div>
